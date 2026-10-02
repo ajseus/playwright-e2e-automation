@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "QA Lab: Servidor", "type": "shell", "command": "npm run dev", "isBackground": true, "problemMatcher": [] },
+    { "label": "QA Lab: Todos os testes", "type": "shell", "command": "npm test", "group": "test", "problemMatcher": [] },
+    { "label": "QA Lab: Testes com navegador", "type": "shell", "command": "npm run test:headed", "group": "test", "problemMatcher": [] }
+  ]
+}

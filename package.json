@@ -1,0 +1,32 @@
+{
+  "name": "qa-playwright-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "playwright test",
+    "test:all": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:auth": "playwright test tests/auth.spec.js",
+    "test:authorization": "playwright test tests/authorization.spec.js",
+    "test:session": "playwright test tests/session.spec.js",
+    "test:password": "playwright test tests/password.spec.js",
+    "test:mfa": "playwright test tests/mfa.spec.js",
+    "test:lockout": "playwright test tests/lockout.spec.js",
+    "report": "playwright show-report",
+    "test:demo": "playwright test tests/demo-completa.spec.js",
+    "test:demo:debug": "playwright test tests/demo-completa.spec.js --debug",
+    "test:regression": "playwright test --grep-invert @demo"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
